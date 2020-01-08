@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="daftarsusterbykarya" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4327fd4a-3f61-4eef-aff9-c069bc7256fb">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT *,YEAR(NOW())- YEAR(suster.tgllahir) AS usiath, YEAR(NOW()) - YEAR(suster.tglkaulkekal) AS karya FROM suster JOIN biara ON suster.biara = biara.id WHERE suster.keaktivan='AKTIF']]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[1]]></fieldDescription>
+	</field>
+	<field name="noinduk" class="java.lang.String">
+		<fieldDescription><![CDATA[2]]></fieldDescription>
+	</field>
+	<field name="namasuster" class="java.lang.String">
+		<fieldDescription><![CDATA[3]]></fieldDescription>
+	</field>
+	<field name="namaasli" class="java.lang.String">
+		<fieldDescription><![CDATA[4]]></fieldDescription>
+	</field>
+	<field name="namabaru" class="java.lang.String">
+		<fieldDescription><![CDATA[5]]></fieldDescription>
+	</field>
+	<field name="tempatlahir" class="java.lang.String">
+		<fieldDescription><![CDATA[6]]></fieldDescription>
+	</field>
+	<field name="tgllahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[7]]></fieldDescription>
+	</field>
+	<field name="namabaptis" class="java.lang.String">
+		<fieldDescription><![CDATA[8]]></fieldDescription>
+	</field>
+	<field name="tempatbaptis" class="java.lang.String">
+		<fieldDescription><![CDATA[9]]></fieldDescription>
+	</field>
+	<field name="tglbaptis" class="java.sql.Date">
+		<fieldDescription><![CDATA[10]]></fieldDescription>
+	</field>
+	<field name="nosuratbaptis" class="java.lang.String">
+		<fieldDescription><![CDATA[11]]></fieldDescription>
+	</field>
+	<field name="tempatkrisma" class="java.lang.String">
+		<fieldDescription><![CDATA[12]]></fieldDescription>
+	</field>
+	<field name="tglkrisma" class="java.sql.Date">
+		<fieldDescription><![CDATA[13]]></fieldDescription>
+	</field>
+	<field name="nosuratkrisma" class="java.lang.String">
+		<fieldDescription><![CDATA[14]]></fieldDescription>
+	</field>
+	<field name="suratkelahiran" class="java.lang.String">
+		<fieldDescription><![CDATA[15]]></fieldDescription>
+	</field>
+	<field name="suratwni" class="java.lang.String">
+		<fieldDescription><![CDATA[16]]></fieldDescription>
+	</field>
+	<field name="gantinama" class="java.lang.String">
+		<fieldDescription><![CDATA[17]]></fieldDescription>
+	</field>
+	<field name="tglmasukbiara" class="java.sql.Date">
+		<fieldDescription><![CDATA[18]]></fieldDescription>
+	</field>
+	<field name="tglmasukpostulat" class="java.sql.Date">
+		<fieldDescription><![CDATA[19]]></fieldDescription>
+	</field>
+	<field name="tglmasuknovisiat" class="java.sql.Date">
+		<fieldDescription><![CDATA[20]]></fieldDescription>
+	</field>
+	<field name="tglkaulsementara" class="java.sql.Date">
+		<fieldDescription><![CDATA[21]]></fieldDescription>
+	</field>
+	<field name="tglkaulkekal" class="java.sql.Date">
+		<fieldDescription><![CDATA[22]]></fieldDescription>
+	</field>
+	<field name="tglkeluar" class="java.lang.String">
+		<fieldDescription><![CDATA[23]]></fieldDescription>
+	</field>
+	<field name="tglmasuklagi" class="java.lang.String">
+		<fieldDescription><![CDATA[24]]></fieldDescription>
+	</field>
+	<field name="tglwafat" class="java.lang.String">
+		<fieldDescription><![CDATA[25]]></fieldDescription>
+	</field>
+	<field name="riwayatsebelumbiara" class="java.lang.String">
+		<fieldDescription><![CDATA[26]]></fieldDescription>
+	</field>
+	<field name="lainlain" class="java.lang.String">
+		<fieldDescription><![CDATA[27]]></fieldDescription>
+	</field>
+	<field name="foto" class="java.lang.String">
+		<fieldDescription><![CDATA[28]]></fieldDescription>
+	</field>
+	<field name="biara" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kmb" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kmp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kmn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kks" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kkk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keaktivan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namabiara" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamatbiara" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kotacabang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usiath" class="java.lang.Integer"/>
+	<field name="karya" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="14" width="555" height="20" uuid="541e87e1-ebc2-4027-8efc-367cb50b7537"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAFTAR SUSTER - SUSTER PI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="1" width="27" height="20" uuid="c44a81de-be28-49b4-9c1f-241806814d42"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="28" y="1" width="146" height="20" uuid="ea4df06b-5184-480f-8d5f-3016cbe2637e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="1" width="85" height="20" uuid="96c96780-5940-4920-89bf-751f6df612ea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="259" y="1" width="85" height="20" uuid="8a4d9e29-df4f-4b4b-92c6-66c9cd4a0e04"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="344" y="1" width="33" height="20" uuid="28ce3bfd-392c-49ef-a9c5-33d8bf80f431"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="377" y="1" width="57" height="20" uuid="5f664217-2011-49cc-8f7f-8a7e5065d050"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="434" y="1" width="121" height="20" uuid="61b606dd-34c9-46f1-919d-dc69c3370469"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="1" width="26" height="20" uuid="61749be6-4b3d-4ac0-bffd-adf858637884"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="1" width="113" height="20" uuid="8f512bf5-77b4-446f-8f22-fdd4b895b0f6"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Suster]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="1" width="68" height="20" uuid="50d023bf-c623-498f-b1f5-8a194edcf4b7"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Kota / Cabang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="1" width="68" height="20" uuid="5e9e3f2d-d6a6-40f6-a6de-4818fa9097f9"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Biara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="1" width="27" height="20" uuid="566c0a4f-8f8b-455c-b90f-e8be3c9d95b9"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="1" width="55" height="20" uuid="d3fd3a29-eb86-49c0-a3b9-20739437a623"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Masa Karya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="1" width="120" height="20" uuid="698f28ac-e6fb-49bd-9fd8-7392d21c017a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Tgl Lahir]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="28" y="1" width="33" height="20" uuid="53d1702c-1785-4259-b758-323e09beab12"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="28" y="1" width="33" height="20" uuid="56225e0e-6ec6-479c-8ff5-7505911f03b4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Induk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="27" height="20" uuid="9a14884e-4dc5-4caa-a800-9d902e16eb1d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="28" y="0" width="146" height="20" uuid="649e34ed-7d51-48ee-b199-74e35c5b99d9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="0" width="85" height="20" uuid="bf95a348-b69b-4c37-8336-143fb0e69e94"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="259" y="0" width="85" height="20" uuid="2af3b805-6a4c-480e-8ee1-52538776ff26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="344" y="0" width="33" height="20" uuid="9fdd5171-a95d-44ec-a5d1-1e57a83bee7d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="377" y="0" width="57" height="20" uuid="51339641-dcfe-4928-b5cb-fe341c7e0e76"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="434" y="0" width="121" height="20" uuid="8c05669b-9d1b-484b-8402-ba151035d03e"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="1" width="26" height="18" uuid="1ba7732f-ef82-420f-9044-7ed9e2bd434b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="63" y="1" width="111" height="18" uuid="bbdb0009-e7c5-4522-8d7b-65381192e159"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namasuster}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="28" y="0" width="33" height="20" uuid="e76cb847-6192-4632-b4c7-14d69f853687"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="30" y="1" width="31" height="18" uuid="34ec850b-1524-4fda-8eab-23f5f3734731"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{noinduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="31" height="20" uuid="6e947ebd-7c40-4ba0-91b7-148a1d6bda26"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{usiath} +" th"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="0" width="83" height="20" uuid="e8d7c8c0-ef6b-4112-ba28-44a3e3df996c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namabiara}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="0" width="55" height="20" uuid="0318eedc-5cd0-4f28-9448-88533ea0b111"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{karya}+" Tahun "]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="435" y="0" width="120" height="20" uuid="3ec1e393-3394-48f4-b453-59499976473a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgllahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="0" width="83" height="20" uuid="67433b73-35cf-42ca-8b7c-cf6c390fa014"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kotacabang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

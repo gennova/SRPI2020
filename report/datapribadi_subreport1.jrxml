@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="datapribadi_subreport1" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="58fe806c-d7ae-4813-ad1b-eceac29d7f99">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idsuster" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from pendidikanformal join pendidikanterakhir on pendidikanformal.idpendidikan=pendidikanterakhir.id where idsuster=$P{idsuster}]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idpendidikan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namasp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamatsp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tglmasuk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgllulus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idsuster" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kodependidikan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namapendidikan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="4" y="2" width="35" height="20" uuid="e4b9c974-5472-4011-8216-b83d0c44738f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="39" y="2" width="119" height="20" uuid="143a9416-eff1-4631-949a-c35e14929005"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="157" y="2" width="178" height="20" uuid="9ee3b67b-12f3-4628-857d-fdfedc6b4e21"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="335" y="2" width="91" height="20" uuid="66f514a9-e293-4f04-9634-a3e685db6726"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="2" width="84" height="20" uuid="a68d5820-0692-4144-ac87-6b576f3cbe43"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="2" width="25" height="20" uuid="da4db5e7-4aad-4041-95b9-202f1b758881"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="2" width="115" height="20" uuid="66120fee-e963-41d7-a60f-4d535eec3efb"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Tingkat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="2" width="100" height="20" uuid="5196781c-500b-4677-a256-49812c1d481e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="2" width="87" height="20" uuid="012f1313-0cb7-4757-bc25-58fff2019807"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="2" width="79" height="20" uuid="7c6009b3-2ab7-44d2-ba47-a228f0a1000d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Selesai]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="4" y="0" width="35" height="20" uuid="aa959dd0-f861-463c-bcf1-e1f6fc6bb33a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="39" y="0" width="119" height="20" uuid="c7b33277-dc21-4157-b6d6-70bc03e5e7e7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="157" y="0" width="178" height="20" uuid="25a8bf6a-fb0b-4c4f-a080-8f2ef2e5010c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="335" y="0" width="91" height="20" uuid="ba3e3b7f-b72d-4b6f-a059-d34cfb856ec4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="0" width="84" height="20" uuid="a46ea52a-69c9-42f6-b97e-712f39412b27"/>
+			</rectangle>
+			<textField>
+				<reportElement x="6" y="0" width="33" height="20" uuid="0801b48a-3cdc-41cf-8b17-0c907dcd696d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="42" y="0" width="115" height="20" uuid="5dced93c-d563-4020-93bf-21561bdc920f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namapendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="0" width="174" height="20" uuid="243cad45-cc6a-49f6-a32d-88d507ed4e0c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namasp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="339" y="0" width="77" height="20" uuid="5876db6c-566e-4c30-be4c-4f2333a52a22"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tglmasuk}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="428" y="-1" width="81" height="20" uuid="6c05c771-e156-4adf-84e8-ab39ab367306"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgllulus}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
